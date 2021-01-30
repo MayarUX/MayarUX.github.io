@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="contact.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"> 
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <meta charset="UTF-8">
+        <meta name="description" content="Mayar is a User Experience Design Student based in The Hague, the Netherlands.">
+        <meta name="keywords" content="UX, user experience, designer, researcher, portfolio">
+        <meta name="author" content="Mayar"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!--Page Content-->
+        <section class="main-content">
+            <!--Title-->
+            <header class="page-header">
+                <a href="index.html" id="page-header"><h1>Mayar UX</h1></a> 
+
+                <!--Menu-->
+                <nav class="menu">
+                    <input type="checkbox" id="check">
+                    <label for="check" class="menubtn">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Work.html">Work</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li id="menu-item"><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main class="text">
+                <section class="contact-content"> 
+                    <h3 class="prompts">Do you need a website?</h3>
+                    <h3 class="prompts">Do you need to redesign your website?</h3>
+                    <h3 class="prompts">Is there a problem you need a solution?</h3>
+                    <h3 class="prompts">Is there a group that you want to design a solution for?</h3>
+                    <h2 class="prompts"> I'll help you find the best solution using that will help you achieve your goal.</h2>
+                    <div class="btn" id="contact-btn">
+                        <a href="#contact">Contact Me!</a>
+                    </div>
+                    <h3> </h3>
+                </section>
+
+                <section id="contact">
+                    <div class="form-wrapper" id="form-wrapper">
+                        <h2>Contact Me</h2>
+                        <form class="contact-form">
+                            <div class="form-item">
+                                <input type="text" id="name" name="name" placeholder="Name" class="text-box">
+                            </div>
+                            <div class="form-item">
+                                <input type="email" id="email" name="email" placeholder="Email" class="text-box">
+                            </div>
+
+                            <div class="form-item">
+                                <input type="subject" id="subject" name="subject" placeholder="Subject" class="text-box">
+                            </div>
+                            <div class="form-item">
+                                <textarea id="content" name="content" placeholder="Write something..."class="text-box"></textarea>
+                            </div>
+                            <div class="btn">
+                                <button type="submit" id="form_button">Send</button> 
+                            </div>
+                        </form>
+                    </div> 
+                </section>
+            </main>
+        </section>
+    </body>
+
+</html>

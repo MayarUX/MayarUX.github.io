@@ -1,0 +1,243 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    color:hsla(15, 25%, 34%,1);
+}
+
+.main-content{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: inline-flex;
+    z-index: 2;
+}
+
+.page-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:hsla(122, 39%, 49%, 1);  
+}
+
+.text{
+    position: relative;
+    z-index:10;
+}
+
+.text h2{
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+.text h3{
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 1em;
+}
+
+.text p{
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1em;
+    margin: 20px 0;
+    max-width: 700px;
+}
+
+
+
+main{
+    padding: 100px;
+}
+
+a{
+    text-decoration: none;
+    color:hsla(15, 25%, 34%,1);
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 1em;
+    background: hsla(122, 39%, 49%, 1); 
+    padding: 10px 30px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 0.2em;
+}
+
+.btn a{
+    color: hsla(255, 100%, 100%, 1);
+    text-decoration: none;
+}
+
+
+.btn:hover {
+    background: hsla(15, 25%, 34%, 1);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#page-header{
+    color:hsla(122, 39%, 49%,1);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+#page-header:hover{
+    color: hsla(15, 25%, 34%, 1);
+    transition: 1.5s;
+
+}
+
+.menu{
+    float: right;
+    clear: both;  
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-right: 40px;
+}
+
+.menu li{
+    list-style-type: none;
+    font-size: 1.1em;
+    display: inline-block;
+    padding: 2em;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.menu li:hover{
+    color:hsla(122, 39%, 49%,1);
+    transform: translateY(-7px);
+    transition: 0.5s;
+}
+
+#menu-item{
+    background: hsla(122, 39%, 49%,1);
+    border-radius: 5px;
+    padding: 8px;
+}
+
+#menu-item a{
+    color: hsla(255, 100%, 100%, 1);
+}
+
+#menu-item: hover{
+    transform: none;
+    transition: 0.5s;
+}
+
+.menubtn{
+    font-size: 30px;
+    color: hsla(122, 39%, 49%,1);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media(max-width: 1000px){
+
+    .main-content, 
+    {
+        padding: 40px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .text{
+        justify-content: center;
+        text-align: center;
+    }
+    .text h2{
+        font-size: 2em;
+        margin: 5px 0;
+        padding: 20px;
+    }
+    .text h3{
+        font-size: 1em;
+        padding: 20px;
+    }
+    .text p{
+        font-size: 0.7em;
+    }
+
+    .page-header{
+        margin-top: 50px;
+        padding: 40px;
+        justify-content: center;
+
+    }
+
+    .btn a{
+        font-size: 0.6em;
+    }
+
+    .menubtn{
+        display: block;
+    }
+
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    .menu li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        font-size: 0.8em;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+}
+
+
+
+footer{
+    width: 100%;
+    height: 2em;
+    color:hsla(122, 39%, 49%, 1);
+    background-color: hsla(15, 25%, 34%, 1);
+    text-align: center;
+    display: block;
+}
