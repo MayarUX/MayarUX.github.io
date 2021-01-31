@@ -22,6 +22,10 @@ html, body{
     clear: both;
 }
 
+.project-header h2{ 
+    font-size: 0.5em;
+}
+
 img{
     width: 80px;
     height: 80px;
@@ -36,8 +40,9 @@ img{
     padding: 10px 0;
 }
 
-h2{ 
-    font-size: 24px;
+.projects-intro{
+    height: 60%;
+    padding: 20px 0;
 }
 
 .project-subs{
@@ -57,18 +62,34 @@ h2{
     margin: 50px 0;
 }
 
+#discoverpro{
+    transform: translateY(173px);
+}
+
+#discoverbespoke{
+    transform: translateY(50px);
+}
+
+#discoverethno{
+    transform: translateY(54px);
+}
+
+#discoverportfolio{
+    transform: translateY(198px);
+}
+
 .images{
     margin-bottom: 15px;
 }
 
 .images-bespoke1{
-    width: 270px;
-    height: 585px;
+    width: 135px;
+    height: 292.5px;
 }
 
 .images-bespoke2{
-    width: 504px;
-    height: 381px;
+    width: 252px;
+    height: 190.5px;
 }
 
 @media only screen and (max-width: 107em){
@@ -83,7 +104,6 @@ h2{
     }
 
 }
-
 
 
 @media only screen and (max-width: 88em){
