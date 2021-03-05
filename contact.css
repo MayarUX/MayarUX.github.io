@@ -1,9 +1,3 @@
-*{
-    box-sizing: border-box;
-    border: none;
-    font-family: 'Josefin Sans', sans-serif;
-}
-
 textarea{
     height: 200px;
 }
@@ -11,7 +5,7 @@ textarea{
 button{
     background: none;
     color: hsla(255, 100%, 100%, 1);
-    text-decoration: none;
+    text-decoration: none; 
 }
 
 button:hover{
@@ -20,57 +14,71 @@ button:hover{
     transition: 0.3s;
 }
 
-.contact-content{
-    margin: 100px 0;
-    padding-top: 50px;
-}
-
-.prompts{
-    padding: 10px 0;
-}
-
-.contact-content h2{
-    padding: 30px 0;
-}
-
-.form-wrapper{
-    clear: both;
-    background-color: hsla(15, 25%, 34%,1);
-    color:hsla(122, 39%, 49%,1);
+textarea{
+    font-family: 'Josefin Sans', sans-serif;
     width: 100%;
-    position: absolute;
-    transform: translate(-50%, 50%);
-    top: 78%;
-    left: 50%;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-form{
-    max-width: 300px;
-    padding: 10px;
-}
-.form-item{
-    padding: 10px;
-    margin: 10px;
-}
-
-.text-box{
-    padding: 10px;
-    border-radius: 4px;
-    width: 100%;
+    padding-left: 250px;
+    height: 100px;
 }
 
 #form-wrapper{
-    padding: 40px 40px 0 40px;
-    padding-left: 40%;
+    padding-top: 100px;
+    /*
+    display: flex;
+    justify-content: center;
+    */
+}
+
+#contact-form{
+    width: 60%;
+    padding: 10px;
+    text-align: left;
+}
+.form-item{
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+.text-box{
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+    border: 2px solid hsla(15, 25%, 34%,1);
+}
+
+.text-box:hover{
+    border-color: hsla(122, 39%, 49%, 1);
+}
+
+.text-box:active{
+    border-color: hsla(122, 39%, 49%, 1);
 }
 
 #contact-btn{
     margin-top: 20px;
-    padding: 20px;
+    padding: 20px 0 0 0;
 }
 
-#form_button {
-    justify-items: center;
+#form_button_wrapper {
+    margin-left: 635px;
+}
+
+@media screen and (max-width: 1000px) {
+    #form_button_wrapper {
+        margin-left: 150px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #form_button_wrapper {
+        margin-left: 80px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    #form_button_wrapper {
+        margin-left: 40px;
+    }
 }

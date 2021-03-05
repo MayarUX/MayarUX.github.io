@@ -1,51 +1,27 @@
-*{
-
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+/*
+ul{
+    list-style: none;
+    display: inline-block;
 }
-html, body{
-    width: 100%;
-    height: 100%;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 16px;
-}
+*/
 .column {
-    float: left;
-    width: 33.33%;
+    width: 80%;
     padding: 15px;
-
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
 }
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.column {
-    float: left;
-}
-
-.left, .right {
-    width: 25%;
-}
-
-.middle {
-    width: 50%;
-}
-
 .about-content h4{
     padding: 5px 0 0 0;
     margin-top: 5px;
-
 }
 
 .para{
     color: hsla(255, 100%, 100%, 1);
 }
-
 #About{
     color: hsla(255, 100%, 100%, 1);
     background: hsla(122, 39%, 49%, 1);
@@ -55,17 +31,12 @@ html, body{
 #Education{
     color:hsla(15, 25%, 34%,1);
     background: hsla(255, 100%, 100%, 1); 
-    margin-top: 20%;
+    margin-top: 5%;
 }
-
-#Work{
-    color: hsla(255, 100%, 100%, 1);
-    background: hsla(122, 39%, 49%, 1);
-    margin-top: 30%;
-}
-
 @media screen and (max-width: 600px) {
     .column {
         width: 100%;
+        font-size: 1.4em;
+        margin-left: 0px;
     }
 }

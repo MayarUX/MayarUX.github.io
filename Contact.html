@@ -37,36 +37,27 @@
             </header>
 
             <main class="text">
-                <section class="contact-content"> 
-                    <h3 class="prompts">Do you need a website?</h3>
-                    <h3 class="prompts">Do you need to redesign your website?</h3>
-                    <h3 class="prompts">Is there a problem you need a solution?</h3>
-                    <h3 class="prompts">Is there a group that you want to design a solution for?</h3>
-                    <h2 class="prompts"> I'll help you find the best solution using that will help you achieve your goal.</h2>
-                    <div class="btn" id="contact-btn">
-                        <a href="#contact">Contact Me!</a>
-                    </div>
-                    <h3> </h3>
-                </section>
-
-                <section id="contact">
-                    <div class="form-wrapper" id="form-wrapper">
+                <section>
+                    <div id="form-wrapper">
                         <h2>Contact Me</h2>
-                        <form class="contact-form">
+                        <form id="contact-form">
                             <div class="form-item">
-                                <input type="text" id="name" name="name" placeholder="Name" class="text-box">
+                                <label >Name</label>
+                                <input type="text" id="name" name="name"  class="text-box">
                             </div>
                             <div class="form-item">
-                                <input type="email" id="email" name="email" placeholder="Email" class="text-box">
+                                <label>Email</label>
+                                <input type="email" id="email" name="email" class="text-box">
                             </div>
 
                             <div class="form-item">
-                                <input type="subject" id="subject" name="subject" placeholder="Subject" class="text-box">
+                                <label>Subject</label>
+                                <input type="subject" id="subject" name="subject" class="text-box">
                             </div>
                             <div class="form-item">
-                                <textarea id="content" name="content" placeholder="Write something..."class="text-box"></textarea>
+                                <textarea id="content" name="content" rows="4" cols="200" placeholder="Write you message here..." class="text-box"></textarea>
                             </div>
-                            <div class="btn">
+                            <div class="btn" id="form_button_wrapper">
                                 <button type="submit" id="form_button">Send</button> 
                             </div>
                         </form>
